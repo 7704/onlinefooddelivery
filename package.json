@@ -5,16 +5,17 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "dev": "nodemon src/app.js -e hbs ,js"
   },
   "author": "Shubham bhai",
   "license": "ISC",
   "dependencies": {
     "body": "^5.1.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "hbs": "^4.2.0",
     "mongoose": "^6.9.2",
     "nodemon": "^2.0.22",
-    "parser": "^0.1.4",
-    "cors": "^2.8.5"
+    "parser": "^0.1.4"
   }
 }

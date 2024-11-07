@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerlink}}
+  </head>
+  <body>
+    {{>navbar}}
+    <section id="home">
+      <h1 class="h-primary">
+        Welcome to My Online Meal
+        <span class="wave" role="img" aria-labelledby="wave">👋🏻</span>
+      </h1>
+      <p>(GET THE BEST IN THE TASTE WITH PROPER HYGEINE....)</p>
+      <div class="work">
+        <a href="/checkout">Order Now</a>
+      </div>
+    </section>
+    <section id="services">
+      <h1 class="h-primarycenter">Our Services</h1>
+      <div class="service">
+        <div class="box">
+          <img src="../img/pizza1.png" alt="" />
+          <h2 class="center">FOOD CATERING</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit
+            illo necessitatibus perspiciatis ratione nobis quidem exercitationem
+            cum hic eum.
+          </p>
+        </div>
+        <div class="box">
+          <img src="../img/bulk food.png" alt="" />
+          <h2 class="center">FOOD ORDERING</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit
+            illo necessitatibus perspiciatis ratione nobis quidem exercitationem
+            cum hic eum.
+          </p>
+        </div>
+        <div class="box">
+          <img src="../img/food delivery.png" alt="" />
+          <h2 class="center">FOOD DELIVERY</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo odit
+            illo necessitatibus perspiciatis ratione nobis quidem exercitationem
+            cum hic eum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client-section">
+      <h1 class="h-primarycenter">Our Clients</h1>
+      <div class="box1">
+        <div id="clients">
+          <div class="client-item">
+            <img src="../img/apple logo.png" alt="our clients" />
+          </div>
+        </div>
+        <div id="clients">
+          <div class="client-item">
+            <img src="../img/micrologo.png" alt="our clients" />
+          </div>
+        </div>
+        <div id="clients">
+          <div class="client-item">
+            <img src="../img/hp logo.png" alt="our clients" />
+          </div>
+        </div>
+        <div id="clients">
+          <div class="client-item">
+            <img src="../img/androd logo.png" alt="our clients" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="h-primarycenter">Contact Us</h1>
+      <div id="contact-box">
+        <form action="/contact" method="POST">
+          <div class="formgroup">
+            <label for="name">Name</label>
+            <input
+              type="form"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="formgroup">
+            <label for="email">Email</label>
+            <input
+              type="form"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div class="formgroup">
+            <label for="phone">Mobile No</label>
+            <input
+              type="form"
+              name="phone"
+              id="phone"
+              placeholder="Enter your Mobile No"
+            />
+          </div>
+          <div class="formgroup">
+            <label for="Message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="btn1" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      {{>footer}}
+    </footer>
+  </body>
+</html>

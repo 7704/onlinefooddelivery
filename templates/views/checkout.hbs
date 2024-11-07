@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerlink}}
+  </head>
+  <body>
+    {{>navbar}}
+    <div class="container">
+      <h2>PLACE YOUR ORDER</h2>
+      <form class="myform" action="/checkout" method="POST">
+        <input type="text" id="name" name="name" class="myInput" placeholder="Enter Your Name"/>
+        <input type="text" id="phone" name="phone" class="myInput" placeholder="Enter Your Mobile no" />
+        <input type="email" id="email" name="email" class="myInput" placeholder="Enter Your Email-Id" />
+         <input type="text" id="order" name="order" class="myInput" placeholder="Enter Your Order"/>
+        <input type="text" id="address" name="address" class="myInput" placeholder="Enter Your Address"/>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+      {{>footer}}
+    </footer>
+  </body>
+</html>
